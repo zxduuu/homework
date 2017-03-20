@@ -1,0 +1,96 @@
+.n_wrapper {
+    width:860px;
+    height: 210px;
+    position: relative;
+    padding-top: 20px;
+    /*background-color: #cbecda;*/
+    /*border:1px solid red;*/
+}
+
+.headline {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.nav_item {
+    display: inline-block;
+    width:128px;
+    position: relative;
+    height:60px;
+    float:left;
+    background-color: #fdfbfb;
+    margin:15px 15px 0 0;
+}
+
+.nav_item a{
+}
+
+.nav_item a img{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -8px;
+    height: 16px;
+    width: 16px;
+}
+
+.nav_item a span {
+    position: absolute;
+    /*text-align: left;*/
+    left: 44px;
+    color: #333;
+    font-size: 14px;
+    padding: 0;
+    max-width: 71px;
+    _width: 71px;
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+    /*text-overflow: ellipsis;*/
+    /*display: inline-block;*/
+}
+
+.nav_block {
+    height: 58px;
+    line-height: 58px;
+    width: 126px;
+}
+
+
+.rebate {
+    position: absolute;
+    display: none;
+    width: 100%;
+    _width: 128px;
+    left: 0;
+    bottom: 0;
+    font-size: 12px;
+    text-align: center;
+    height: 18px;
+    line-height: 18px;
+    color: #fff;
+    background: #ff8300;
+}
+
+.rebate a {
+    font-size: 12px;
+    color: #fff;
+    /*text-decoration: underline;*/
+}
+
+.fanli_tag {
+    display: block;
+    /*display: none;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    background: url("https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mantpl/img/nav/fanli_40794035.png") repeat 0 0;
+}
+
+.fanli_tag a {
+    display: inline-block;
+    width:16px;
+    height:16px;
+}
