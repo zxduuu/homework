@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>register web page</title>
+    <link rel="stylesheet" type="text/css" href="register-1.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <div class="title-box">
+        <img src="http://www.qdjj.net/images/qdjjlogo.gif">
+    </div>
+
+    <div class="click">
+        <a href="http://www.qdjj.net/member/register.asp">注册</a>&nbsp;
+        <a href="http://www.qdjj.net/login.asp">登录</a>&nbsp;
+        <a href="http://v.baidu.com/">收藏本站</a>
+    </div>
+
+    <div class="imfor">
+        <tr>
+            <!--------------教员信息--------------->
+            <table class="table-outer">
+                <tr>
+                    <th>
+                        新教员注册第一步选择用户名、密码和身份
+                    </th>
+                </tr>
+            </table>
+        </tr>
+        <tr>
+            <form action="http://localhost:63342/web/week%202/register%20web/register-2.html" method="post">
+                <table class="table-inner">
+                    <tr>
+                        <td class="td1" colspan="3">
+                            注意：带 <font color="#FF0000">*</font> 为必填项
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td2" colspan="3">&nbsp;<b>登录名和密码</b></td>
+                    </tr>
+
+                    <tr>
+                        <td class="innertd1"><font color="#FF0000">*</font>会员名:</td>
+                        <td><input type="text" name="username" id="username" required/></td>
+                        <td class="innertd3"><font color="FF6600">3-12个字符</font>，会员名须以字母开头，只能由英文字母、数字、下划线组成，中间不能有空格。
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="innertd1"><font color="#FF0000">*</font>密码:</td>
+                        <td><input type="password" name="password" id="password" required/></td>
+                        <td class="innertd3"><font color="FF6600"> 6-20个字符</font>，区分英文字母大小写。</td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="innertd1"><font color="#FF0000">*</font>确认密码:</td>
+                        <td><input type="password" name="repassword" id="repassword" required/></td>
+                        <td class="innertd3">确认密码要与密码完全一致，注意英文字母大小写。</td>
+                    </tr>
+
+                    <tr>
+                        <td class="td2" colspan="3">&nbsp;<b>选择教员身份</b></td>
+                    </tr>
+
+                    <tr>
+                        <td class="innertd1"><font color="#FF0000">*</font>教员身份:&nbsp;</td>
+                        <td class="innertd2" colspan="2">
+                            <input type="radio" name="sex" value="type"/> 在校大学生（研究生），不含留学生
+                            <br/>
+                            <input type="radio" name="sex" value="type"/> 专职老师（在职/进修/离职/退休
+                            <br/>
+                            <input type="radio" name="sex" value="type"/> 外籍人士（含留学生、外教），海外归国人员
+                            <br/>
+                            <input type="radio" name="sex" value="type"/> 社会职业人士(已经毕业离校的非教师职业人员)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height=60px colspan="3" align="center">
+                            <input type="submit" name="button" value="提交">
+                            <input type="reset" name="button" value="重置">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+            <footer>
+                Copyright&copy;2003~2008 版权所有 青岛家教网
+            </footer>
+        </tr>
+    </div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    background-color: #08798c;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+a {
+    color: #ff1383;
+    text-decoration: none;
+}
+
+td {
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration: none;
+    background-color: #FFFFFF;
+}
+
+footer {
+    width: 620px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 150%;
+    position:absolute;
+    bottom:-20px;
+}
+
+.wrapper {
+    width: 700px;
+    height: 2500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    border: 20px;
+    background: white;
+    border-radius: 25px;
+}
+
+.title-box {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 3px;
+}
+
+/*链接项区域*/
+.click {
+    text-align: right;
+    font-size: 12px;
+    position: relative;
+    top: 68px;
+    margin-right: 38px;
+    float: right;
+}
+
+.imfor {
+    width: 620px;
+    position: absolute;
+    top: 88px;
+    left: 50%;
+    margin-left: -310px;
+    border: 0px solid #c6c6c6;
+}
+
+.table-outer {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+}
+
+.table-inner {
+    width: 100%;
+    font-size: 18px;
+    border: 0;
+    padding: 0;
+}

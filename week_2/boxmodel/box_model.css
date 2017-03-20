@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*标准盒模型*/
+.shoe {
+    /*margin-top: 50px;*/
+    /*margin-left: 100px;*/
+    width: 100px;
+    height: 100px;
+    background-color: #17801a;
+    overflow-y: hidden;
+}
+
+/*怪异盒模型*/
+.shoe1 {
+    /*margin-top: 50px;*/
+    /*margin-left: 100px;*/
+    width: 100px;
+
+    height: 100px;
+    background-color: #17801a;
+    overflow-x: auto;
+}
+
+/*标准盒模型*/
+.shoe_box {
+    box-shadow: 5px 5px 5px 10px pink;
+    margin: 100px;
+    /*margin-left: 100px;*/
+    /*margin-top: 100px;*/
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #90dfff;
+    border: 5px solid #801e8b;
+}
+
+/*怪异盒模型*/
+.shoe_box1 {
+    box-shadow: 5px 5px 5px pink;
+    margin: 50px 50px 50px 100px;
+    padding: 10px;
+    width: 130px;
+    height: 130px;
+    background-color: #90dfff;
+    border: 5px solid #801e8b;
+    box-sizing: border-box;
+}

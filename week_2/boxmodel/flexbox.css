@@ -1,0 +1,64 @@
+/*旧*/
+.con_o {
+    display: -webkit-box;
+    -webkit-box-orient:horizontal;
+    width:600px;
+    /*height: 300px;*/
+    background-color: #ffe8d0;
+}
+
+/*新*/
+.con_n {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    width:600px;
+    /*height: 300px;*/
+    background-color: #ffe8d0;
+}
+
+/*旧*/
+.first_1 {
+    height: 40px;
+    -webkit-box-flex: 1;
+    background-color: #beffdc;
+}
+
+/*旧*/
+#second_1 {
+    height:40px;
+    -webkit-box-flex:1;
+    background-color:#ff7a89 ;
+}
+
+/*旧*/
+#third_1{
+    height:80px;
+    -webkit-box-flex:1;
+    background-color: #86a8ff;
+}
+
+/*新*/
+.first_2 {
+    -webkit-order: 2;
+    height: 50px;
+    -webkit-flex: 1;
+    background-color: #beffdc;
+}
+
+/*新*/
+#second_2 {
+    -webkit-order: 3;
+    height:50px;
+    -webkit-flex:1;
+    background-color: #69bbff;
+}
+
+/*新*/
+#third_2{
+    -webkit-order: 1;
+    height:80px;
+    -webkit-flex:1;
+    background-color: #ff7a89;
+}
+

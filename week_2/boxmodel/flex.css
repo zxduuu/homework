@@ -1,0 +1,22 @@
+/*column分栏*/
+.col{
+    -webkit-column-count:4;
+    -webkit-column-rule-style: dashed;
+    -webkit-column-gap:15px;
+}
+
+/*居中布局*/
+.center{
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    height:300px;
+    width:300px;
+    background-color: #623522;
+}
+
+.box{
+    width:100px;
+    height:100px;
+    background-color: #90dfff;
+}

@@ -1,0 +1,226 @@
+body {
+    font: 12px arial;
+    margin: 0;
+    padding: 0;
+    min-height:800px;
+}
+
+#ul {
+    position: absolute;
+    margin: 19px 0 5px 0;
+    padding: 0 96px 0 0;
+    top: 0;
+    right: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a.mnav {
+    float: left;
+    color: #333;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+a.lb {
+    float: left;
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 20px;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+a.bri {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    float: left;
+    width: 60px;
+    height: 23px;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+}
+
+.wrapper {
+    position:relative;
+    height: 100%;
+    min-width:810px;
+    min-height:600px;
+}
+.form {
+    margin: 22px auto 0;
+    width: 641px;
+    text-align: left;
+}
+
+.logo {
+    width:270px;
+    height:129px;
+    border:0;
+}
+
+/********搜索框*********/
+.s_form_wrapper {
+    position: relative;
+    top: 39px;
+    text-align: center;
+}
+
+.input_wrapper {
+    border: 1px solid #b6b6b6;
+    background: #fff;
+    display: inline-block;
+    vertical-align: top;
+    width: 537px;
+    height: 34px;;
+    margin-right: 0;
+    border-right-width: 0;
+    overflow: hidden;
+    float: left;
+    position: relative;
+/ / 绝对定位的父元素必须是relative
+}
+
+.input_photo {
+    background: #fff url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/soutu_icons_6eead741.png) no-repeat 0 0;
+    cursor: pointer;
+    position: absolute;
+    right: 11px;
+    top: 9px;
+    height: 16px;
+    width: 18px;
+}
+
+.input {
+    margin: 6px 0 0 7px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    width: 500px;
+    height: 22px;
+    font: 16px/18px arial;
+    display: inline-block;
+    outline:0;
+}
+
+.btn_wrapper {
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.btn {
+    width: 100px;
+    height: 36px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    outline: medium;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+input.btn:hover {
+    background: blue;
+}
+
+.ft {
+    height: 100px;
+    position: absolute;
+    bottom: 23px;
+    text-align: center;
+    width: 100%;
+}
+
+.qr_code {
+    display: inline-block;
+}
+
+/**********二维码********/
+.qrcode-item {
+    display: inline-block;
+}
+
+.qrcode-img {
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+.qrcode-text {
+    float: left;
+    color: #999;
+    line-height: 23px;
+    margin: 8px 0 0 10px;
+}
+
+.qrcode-item-1 .qrcode-img {
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_62c636fe.png) 0 0 no-repeat;
+}
+
+.qrcode-item-2 .qrcode-img {
+    margin-left: 33px;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_62c636fe.png) 0 0 no-repeat;
+}
+
+.qrcode-text {
+    color: #999;
+}
+
+.announcement {
+    display: inline-block;
+    text-align: left;
+    line-height: 22px;
+    vertical-align: top;
+    margin-left: 33px;
+    position: relative;
+    top: -5px;
+}
+
+.lh a {
+    margin-left: 62px;
+    color: #999;
+}
+
+.announcement a {
+    color: #999;
+}
+
+a.seth {
+    margin-left: 0;
+}
+
+p.cp {
+    margin: 0;
+    padding: 0;
+    color: #999;
+}
+
+p.jg {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #999;
+}

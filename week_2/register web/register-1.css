@@ -1,0 +1,123 @@
+body {
+    background-color: #08798c;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+a {
+    color: #ff1383;
+    text-decoration: none;
+}
+
+th {
+    padding: 12px;
+}
+
+footer {
+    width: 620px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 150%;
+    position:absolute;
+    bottom:-20px;
+}
+
+.wrapper {
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    border: 20px;
+    background: white;
+    border-radius: 25px;
+}
+
+.title-box {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 3px;
+}
+
+/*链接项区域*/
+.click {
+    text-align: right;
+    font-size: 12px;
+    position: relative;
+    top: 68px;
+    margin-right: 38px;
+    float: right;
+}
+
+.imfor {
+    width: 620px;
+    height: 350px;
+    position: absolute;
+    top: 88px;
+    left: 50%;
+    margin-left: -310px;
+    border: 1px solid #c6c6c6;
+}
+
+.table-outer {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.table-inner {
+    width: 100%;
+    font-size: 18px;
+    border: 0;
+    padding: 0;
+}
+
+
+.td1 {
+    padding: auto 12px;
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #333333;
+}
+
+/*字体加粗的表格*/
+.td2 {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 150%;
+    text-decoration: none;
+    color: #000000;
+    background-color: #e5e5e5;
+}
+
+/*靠右排列的表格*/
+.innertd1 {
+    width: 17%;
+    text-align: right;
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #333333;
+}
+
+/*靠左排列的格(input项)*/
+.innertd2 {
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #333333;
+}
+
+/*靠左排列的表格*/
+.innertd3 {
+    width: 52%;
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #888888;
+}
