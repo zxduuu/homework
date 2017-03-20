@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单_1</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <style type="text/css">
+        body, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0c9;
+            color: #333;
+        }
+
+        .content {
+            padding-top: 5%;
+        }
+
+        .content .select {
+            width: 300px;
+            /*height:40px;*/
+            margin: 0 auto;
+            font-family: "Microsoft Yahei";
+            font-size: 16px;
+            background-color: #fff;
+            position: relative;
+        }
+
+        .content .select:after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-left: 1px #ccc solid;
+            border-bottom: 1px #ccc solid;
+            position: absolute;
+            top: 11px;
+            right: 12px;
+            transform: rotate(-45deg);
+            transition: transform .3s ease-out, top .3s ease-out;
+        }
+
+        .content .select p {
+            padding: 0 15px;
+            line-height: 40px;
+            cursor: pointer;
+        }
+
+        .content .select ul {
+            list-style-type: none; /*去掉默认符号*/
+            background-color: #e0e0e0;
+            width: 100%;
+            overflow-y: auto;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            max-height: 0; /*设置隐藏掉选项*/
+            transition: max-height .3s ease-out;
+            /*display: none;*/
+        }
+
+        .content .select ul li {
+            padding: 0 15px;
+            line-height: 40px;
+            cursor: pointer;
+        }
+
+        .content .select ul li:hover {
+            background-color: #e0e0e0;
+        }
+
+        /*当前选中项*/
+        .content .select ul li.selected {
+            background-color: #5d9cff;
+            color: #fff;
+        }
+
+        @-webkit-keyframes slide-down {
+            0% {
+                transform: scale(1, 0);
+            }
+            25% {
+                transform: scale(1, 1.2);
+            }
+            50% {
+                transform: scale(1, 0.75);
+            }
+            75% {
+                transform: scale(1, .9);
+            }
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+
+        .content .select.open ul {
+            max-height: 250px; /*展开选项*/
+            transform-origin: 50% 0;
+            -webkit-animation: slide-down .9s ease-in;
+            transition: max-height .9s ease-out;
+        }
+
+        .content .select.open:after {
+            transform: rotate(-225deg);
+            top: 18px;
+            transition: all .3s ease-in;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            function bindEvent(i) {
+                var pid = '#js-p-' + i;
+                var sid = '.s' + i;
+
+                $(pid).on('click', function (e) {
+                    console.log(pid);
+                    console.log(sid);
+                    $(sid).toggleClass('open');
+                    e.stopPropagation(); //            阻止冒泡
+                });
+
+                $('.select ul li').on('click', function (e) {
+                    var _this = $(this);
+                    console.log(pid);
+                    console.log(sid);
+                    $(pid).text(_this.attr('data-value')); // $(this) 代表当前单击的结点
+                    _this.addClass('selected').siblings().removeClass('selected');
+                    $(sid).removeClass('open');
+                    e.stopPropagation();
+                });
+
+                $(document).on('click', function () {
+                    $(sid).removeClass('open');
+                });
+            }
+
+            for (var i = 0; i < 2; i++) {
+                bindEvent(i);
+            }
+        });
+    </script>
+</head>
+<body>
+<div class="content">
+    <div class="select s0">
+        <p id="js-p-0">所有选项1</p>
+        <ul>
+            <li data-value="1">1</li>
+            <li data-value="html">html</li>
+            <li data-value="css">css</li>
+            <li data-value="javascript">javascript</li>
+            <li data-value="jQuery">jQuery</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content">
+    <div class="select s1">
+        <p id="js-p-1">所有选项2</p>
+        <ul>
+            <li data-value="2">2</li>
+            <li data-value="html">html</li>
+            <li data-value="css">css</li>
+            <li data-value="javascript">javascript</li>
+            <li data-value="jQuery">jQuery</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

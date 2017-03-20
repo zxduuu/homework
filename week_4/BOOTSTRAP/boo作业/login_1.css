@@ -1,0 +1,26 @@
+body {
+    background: radial-gradient(#adbf41, #328a26);
+}
+
+.loginbox {
+    margin: 60px auto;
+    width: 45%;
+    height: 300px;
+    border: 2px solid #119468;
+    padding: 30px;
+    background: #8dbf42;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #62884e;
+    /*opacity:0.9;*/
+}
+
+.title {
+    margin: 100px auto 0 auto;
+    width: 45%
+}
+
+.size {
+    float: right;
+    width: 20%;
+    height: 20%;
+}

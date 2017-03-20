@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple try</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>
+        .one {
+            height: 200px;
+            background-color: palevioletred;
+        }
+
+        .two {
+            height: 150px;
+            background-color: #94d4e8;
+        }
+
+        .thi {
+            height: 220px;
+            width: 50%;
+            background-color: #cbffd3;
+        }
+
+        .four {
+            height: 200px;
+            width: 98%;
+            background-color: #fff6c2;
+            display: none;
+        }
+        img {
+            max-width: 100%;
+        }
+
+        .logo {
+            width: 270px;
+            height: 129px;
+            border: 0;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .container {
+                width: 1100px;
+                margin: auto
+            }
+        }
+
+        @media only screen and (min-width: 400px) and (max-width: 1024px) {
+            .one {
+                width: 95%;
+            }
+
+            .thi {
+                width: 30%
+            }
+
+            .two {
+                width: 65%
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .one, .two {
+                width: 98%;
+                height: 300px;
+            }
+
+            .two {
+                margin: 5px 0;
+            }
+
+            .thi {
+                display: none;
+            }
+
+            .four {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="one">
+        我是极客学院
+    </div>
+
+    <div class="two">
+        我报了极客学院
+    </div>
+
+    <div class="thi">
+        正在学习极客学院
+        <img class="logo" src="baidu_logo.png" alt="logo">
+    </div>
+
+    <div class="four">
+        换成我啦
+    </div>
+
+</div>
+
+</body>
+</html>

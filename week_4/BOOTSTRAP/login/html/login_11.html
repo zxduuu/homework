@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台登录界面</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/login_11.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="title">
+        <h2>用户登录</h2>
+        <!--灯泡图片的放置-->
+        <div><img src="../log.jpg" alt="登录页面" class="img-circle size"></div>
+    </div>
+
+    <div class="loginbox">
+        <!--<label class="sr-only">hello</label>-->
+        <!--<input type="text" class="form-control" aria-describedby="helpblock">-->
+        <!--<span id="helpblock" class="help-block">这是一个输入密码的框,要注意:</span>-->
+        <form action="login_2n.html" method="post">
+            <!--用户名的设置-->
+            <div class="form-group has-success has-feedback">
+                <label class="control-label">Usermame</label>
+                <input type="text" class="form-control" placeholder="Email" required=＂required＂
+                       aria-describedby="inputsuccessstatus">
+                <span class="glyphicon glyphicon-user form-control-feedback" aria-hidden="true"></span>
+            </div>
+            <!--密码的设置-->
+            <div class="form-group has-success has-feedback">
+                <label class="control-label">Password</label>
+                <input type="text" class="form-control" placeholder="........" required=＂required＂
+                       aria-describedby="inputsuccessstatus">
+                <span class="glyphicon glyphicon-pencil form-control-feedback" aria-hidden="true"></span>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-block">登录</button>
+
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

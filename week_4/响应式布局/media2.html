@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--移动端适配 需加这一段缩放比例的meta关键字-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta charset="UTF-8">
+    <title>CSS响应式</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*实际中尽量不要用* 选需要的属性*/
+        .left {
+            float: left;
+            width: 20%;
+            height: 500px;
+            background-color: #a3f1c9;
+            -webkit-transition: width 1s ease;
+        }
+
+        .middle {
+            float: left;
+            width: 55%;
+            height: 800px;
+            background-color: #b33441;
+            margin: 0 5px 0 5px;
+            -webkit-transition: width 1s ease;
+        }
+
+        .right {
+            float: left;
+            width: 20%;
+            height: 500px;
+            background-color: #60a5d1;
+            -webkit-transition: width 1s ease;
+        }
+
+        .container {
+            margin: 5px;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .container {
+                width: 1100px;
+                margin: auto
+            }
+        }
+
+        @media only screen and (min-width: 400px) and (max-width: 1024px) {
+            .right {
+                width: 0;
+            }
+
+            .left {
+                width: 30%
+            }
+
+            .middle {
+                width: 65%
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .left, .right, .middle {
+                width: 98%;
+                height: 300px;
+            }
+            .middle{
+                margin:5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        我是左侧
+    </div>
+    <div class="middle">
+        我是中间
+    </div>
+    <div class="right">
+        我是右侧
+    </div>
+</div>
+</body>
+</html>

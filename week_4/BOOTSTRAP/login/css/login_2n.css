@@ -1,0 +1,159 @@
+html {
+    height: 100%;
+    /*min-width: 800px;*/
+}
+
+body {
+    background: radial-gradient(#adbf41, #328a26);
+    /*height: 100%;*/
+    /*min-width:800px;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    min-width:800px;
+}
+
+/*.container {*/
+/*width:100%;*/
+/*margin:0;*/
+/*padding:0;*/
+/*}*/
+
+
+.pad {
+    padding: 68px;
+}
+
+
+/*页面主体部分*/
+.main {
+    width: 100%;
+    height: 570px;
+    margin-top: 100px;
+    /*border: 2px solid #119468;*/
+    border-radius: 20px;
+}
+
+/*左侧菜单栏*/
+.navl {
+    /*width:22%;*/
+    padding: 6px;
+    height: 100%;
+    /*margin-left:3%;*/
+    /*margin: 63px 0 0 -20px;*/
+    border-radius: 6px;
+    background: #3f3f3f;
+    /*overflow:hidden;*/
+    /*float:left;*/
+}
+
+.navl ul, li {
+    list-style: none;
+    position: relative;
+    width: 220px;
+    /*height:60px;*/
+    /*text-align:center;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+.navl ul li a {
+    /*width:220px;*/
+    /*height:60px;*/
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    /*border-right: 2px solid #ccc;*/
+    color: #666;
+}
+
+/*二级菜单展示*/
+.navl ul li a:hover {
+    color: #f00;
+}
+
+.navl ul li ul {
+    /*position:absolute;*/
+    display: none;
+}
+
+.navl ul li ul li {
+    float: none;
+    width: 100%;
+}
+
+/*.nav ul li ul li a { border-right:none; border-top:1px dotted #ccc; background:#f5f5f5;}*/
+.navl ul li:hover ul {
+    display: block;
+}
+
+.open {
+    max-height: 300px;
+    display: block;
+    /*top: -80px;*/
+    /*transition: all .2s ease-in;*/
+}
+
+.hide {
+    display: none;
+}
+
+.con_1 {
+    width: 50%;
+    height: 100%;
+}
+
+.bn-lg {
+    width: 100%;
+}
+
+.article {
+    width: 100%;
+    height: 482px;
+    /*margin-right:3%;*/
+    color: #666666;
+    border-radius: 6px;
+    background: #3f3f3f;
+    float: right;
+}
+
+.content {
+    /*max-height: 0;*/
+    /*display: none;*/
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 20px;
+    color: #fff;
+}
+
+/*响应式布置菜单和主要内容*/
+@media only screen and (min-width: 1149px) {
+    .pad {
+        margin-top: 28px;
+    }
+}
+
+@media only screen and (min-width: 887px) and (max-width: 1148px) {
+    .pad {
+        margin-top: 68px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 886px) {
+    .pad {
+        margin-top: 108px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pad {
+        margin-top: 18px;
+    }
+}

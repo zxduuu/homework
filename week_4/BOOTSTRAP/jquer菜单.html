@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>平级标签鼠标滑过效果</title>
+<script type="text/javascript" src="http://www.webdm.cn/themes/script/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".ab").hover(function(){
+		$(".b").show();
+	},function(){
+		$(".b").hide();
+	})
+})
+</script>
+<style type="text/css">
+.cl { clear:both;}
+.ab { background:#CCC; float:left;}
+.a_box { width:200px;}
+.b_box { width:200px;}
+.a,.b{ border:1px solid #063; font-size:14px; padding:5px; margin:12px; width:200px;}
+.b { display:none;}
+.aa,.bb{ border:1px solid #063; font-size:14px; padding:5px; margin:12px; width:200px;}
+.bb { display:none;}
+a {font-size:14px; color:#000; text-decoration:none;}
+.txt { width:100%;}
+</style>
+</head>
+
+<body>
+<div class="ab">
+    <div class="a">文章分类</div>
+    <div class="b"><a href="">一级分类</a><a href="">二级分类</a></div>
+</div>
+<div class="cl"></div>
+<div class="txt">其实完全没有你想象的那么复杂；a与b是平级的，那么他们一定有共同的父级标签（即使没有也可以加一个，也不会影响格局）；那么效果及代码如上所示</div>
+<br />
+<br />
+<div class="txt">如果a与b确实在不同的父级标签下，就比较麻烦了，效果及代码如下</div>
+<script type="text/javascript">
+$(function(){
+	$(".aa").hover(function(){
+		$(".bb").show();
+		clearTimeout(timer);
+	},function(){
+		timer=setTimeout(function(){
+			$(".bb").hide();
+		},700);		
+	})
+	$(".bb").hover(function(){
+		clearTimeout(timer);
+		$(".bb").show();
+	},function(){
+		timer=setTimeout(function(){
+			$(".bb").hide();
+		},700);	
+	})
+})
+</script>
+<div class="a_box">
+    <div class="aa">文章分类</div>
+</div>
+<div class="b_box">
+    <div class="bb"><a href="">一级分类</a><a href="">二级分类</a></div>
+</div>
+<div class="txt">我在a与b之间加了一个700毫秒的延迟，这个时间的长短可根据你的需要调整</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
