@@ -1,0 +1,297 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font: 12px arial;
+    margin: 0;
+    padding: 0;
+    /*min-height:800px;*/
+}
+
+#ul {
+    position: absolute;
+    margin: 19px 0 5px 0;
+    padding: 0 96px 0 0;
+    top: 0;
+    right: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#ul a:link {
+    text-decoration: none;
+}
+
+#ul a.mnav {
+    float: left;
+    color: #333;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 20px;
+    _margin-left: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+#ul a.lb {
+    float: left;
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 20px;
+    _margin-left: 20px;
+    text-decoration: underline;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+#ul a.mnav:hover {
+    color: #262fff;
+}
+
+#ul a.lb:hover {
+    color: #262fff;
+}
+
+#ul a.bri {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: absolute;
+    right: 10px;
+    float: left;
+    width: 60px;
+    height: 23px;
+    color: #fff;
+    background-color: #38f;
+    _background-color: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    _margin-left: 19px;
+    margin-right: 2px;
+    _margin-right: 2px;
+}
+
+body .wrapper {
+    position: relative;
+    height: 100%; /*要让该句生效,对html,body100%*/
+    min-width: 810px;
+    min-height: 600px;
+}
+
+.s_form_wrapper .form {
+    margin: 22px auto 0;
+    width: 641px;
+    text-align: left;
+}
+
+.s_form_wrapper .logo {
+    width: 270px;
+    height: 129px;
+    border: 0;
+}
+
+/********搜索框*********/
+.s_form_wrapper {
+    position: relative;
+    top: 39px;
+    text-align: center;
+}
+
+/*搜索框hover时颜色变化*/
+.s_form_wrapper .form .input_wrapper:hover {
+    border: 1px solid #8a8a8a;
+    border-right: 0;
+}
+
+.s_form_wrapper .form .input_wrapper {
+    border: 1px solid #b6b6b6;
+    background: #fff;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    width: 537px;
+    height: 34px;;
+    margin-right: 0;
+    border-right-width: 0;
+    overflow: hidden;
+    float: left;
+    position: relative; /*绝对定位的父元素必须是relative*/
+}
+
+.s_form_wrapper .form span.input_photo {
+    background: #fff url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/soutu_icons_6eead741.png) no-repeat 0 0;
+    cursor: pointer;
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    height: 16px;
+    width: 18px;
+    margin-top: -8px;
+}
+
+.s_form_wrapper .form span.ipt_rec {
+    z-index: 1;
+    display: block;
+    position: absolute;
+    /*right: 0;*/
+    height: 32px;
+    width: 30px;
+    background: url(../image/rec.png) no-repeat center;
+    background-size: 25px 25px;
+    background-position: 0 50%;
+    cursor: pointer;
+    right: 41px;
+}
+
+/*竖线*/
+.ipt_rec:after {
+    content: "";
+    display: block;
+    *display: inline;
+    *zoom: 1;
+    height: 14px;
+    width: 10px;
+    border-left: 1px solid #e7e7e7;
+    margin: 10px 0 10px 30px;
+}
+
+.s_form_wrapper .form .input {
+    margin: 6px 0 0 7px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    width: 500px;
+    height: 22px;
+    font: 16px/18px arial;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    outline: 0; /*去掉框内阴影*/
+}
+
+.s_form_wrapper .form .btn_wrapper {
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid transparent;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+}
+
+.s_form_wrapper .form .btn_wrapper .btn {
+    width: 100px;
+    height: 36px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: #3385ff;
+    outline: medium;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    border: none;
+    cursor: pointer;
+}
+
+.s_form_wrapper .form .btn_wrapper input.btn:hover {
+    background-color: #262fff;
+}
+
+.ft {
+    height: 100px;
+    position: absolute;
+    bottom: 23px;
+    text-align: center;
+    width: 100%;
+}
+
+.ft .qr_code {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/**********二维码********/
+.ft .qr_code .qrcode-item {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.ft .qrcode-img {
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+.ft .qrcode-text {
+    float: left;
+    color: #999;
+    line-height: 23px;
+    margin: 8px 0 0 10px;
+}
+
+.ft .qr_code .qrcode-item-1 .qrcode-img {
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_62c636fe.png) 0 0 no-repeat;
+}
+
+.ft .qr_code .qrcode-item-2 .qrcode-img {
+    margin-left: 33px;
+    _margin-left: 33px;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_62c636fe.png) 0 0 no-repeat;
+}
+
+.ft .qr_code .qrcode-text {
+    color: #999;
+}
+
+.ft .announcement {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    text-align: left;
+    line-height: 22px;
+    vertical-align: top;
+    margin-left: 33px;
+    _margin-left: 33px;
+    position: relative;
+    top: -5px;
+}
+
+.ft .announcement .lh a {
+    margin-left: 62px;
+    _margin-left: 62px;
+    color: #999;
+}
+
+.ft .announcement a {
+    color: #999;
+}
+
+.ft .announcement a .seth {
+    margin-left: 0;
+}
+
+.ft .announcement p .cp {
+    margin: 0;
+    padding: 0;
+    color: #999;
+}
+
+.ft .announcement p .jg {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #999;
+}

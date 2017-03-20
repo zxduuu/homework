@@ -1,0 +1,657 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #ddd476;
+}
+
+.wrap {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin: 100px auto;
+}
+
+.wrap:after {
+    display: block;
+    content: "";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.tail {
+    border-left:3px solid black;
+    width:30px;
+    height:15px;
+    border-bottom-left-radius: 72px;
+    position: relative;
+    left:50%;
+    top:50%;
+    margin-left: -25px;
+    margin-top:-27px;
+}
+
+/*车头*/
+.trapezoid {
+    width: 50px;
+    height: 65px;
+    border-radius: 8px 40px 8px 8px;
+    border: 6px solid #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -21px;
+    margin-left: 28px;
+}
+
+.flat {
+    width: 170px;
+    border-radius: 8px;
+    border: 4px solid #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -85px;
+    margin-top: 50px;
+
+}
+
+.window {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px 13px 3px 3px;
+    border: 4px solid #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -24px;
+    margin-left: -14px;
+}
+
+/*车厢*/
+.carriage {
+    width: 90px;
+    height: 68px;
+    border-radius: 6px;
+    border: 6px solid #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -32px;
+    margin-left: -77px;
+    transform-style:preserve-3d;
+}
+
+/*前轮的变大*/
+@-webkit-keyframes bigchange1 {
+    0% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: 40px;
+        border: 6px solid #65a363;
+    }
+    50% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: 40px;
+        border: 6px solid #65a363;
+    }
+    75% {
+        width: 42px;
+        height: 42px;
+        margin-top: 45px;
+        margin-left: 33px;
+        border: 10px solid #65a363;
+    }
+    90% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: 40px;
+        border: 6px solid #65a363;
+    }
+}
+
+/*兼容*/
+@-ms-keyframes bigchange1 {
+    0% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: 40px;
+        border: 6px solid #65a363;
+    }
+    50% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: 40px;
+        border: 6px solid #65a363;
+    }
+    75% {
+        width: 42px;
+        height: 42px;
+        margin-top: 45px;
+        margin-left: 33px;
+        border: 10px solid #65a363;
+    }
+    90% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: 40px;
+        border: 6px solid #65a363;
+    }
+}
+
+@keyframes bigchange1 {
+    0% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: 40px;
+        border: 6px solid #65a363;
+    }
+    50% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: 40px;
+        border: 6px solid #65a363;
+    }
+    75% {
+        width: 42px;
+        height: 42px;
+        margin-top: 45px;
+        margin-left: 33px;
+        border: 10px solid #65a363;
+    }
+    90% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: 40px;
+        border: 6px solid #65a363;
+    }
+}
+
+/*后轮的变大*/
+@-webkit-keyframes bigchange2 {
+    0% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: -69px;
+        border: 6px solid #65a363;
+    }
+    50% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: -69px;
+        border: 6px solid #65a363;
+    }
+
+    75% {
+        width: 42px;
+        height: 42px;
+        margin-top: 45px;
+        margin-left: -78px;
+        border: 10px solid #65a363;
+    }
+    90% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: -69px;
+        border: 6px solid #65a363;
+    }
+}
+
+@-ms-keyframes bigchange2 {
+    0% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: -69px;
+        border: 6px solid #65a363;
+    }
+    50% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: -69px;
+        border: 6px solid #65a363;
+    }
+
+    75% {
+        width: 42px;
+        height: 42px;
+        margin-top: 45px;
+        margin-left: -78px;
+        border: 10px solid #65a363;
+    }
+    90% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: -69px;
+        border: 6px solid #65a363;
+    }
+}
+
+@keyframes bigchange2 {
+    0% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: -69px;
+        border: 6px solid #65a363;
+    }
+    50% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: -69px;
+        border: 6px solid #65a363;
+    }
+
+    75% {
+        width: 42px;
+        height: 42px;
+        margin-top: 45px;
+        margin-left: -78px;
+        border: 10px solid #65a363;
+    }
+    90% {
+        width: 28px;
+        height: 28px;
+        margin-top: 52px;
+        margin-left: -69px;
+        border: 6px solid #65a363;
+    }
+}
+
+/*前轮*/
+.wheel_1 {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 6px solid #65a363;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 52px;
+    margin-left: 40px;
+    -webkit-animation: bigchange1 2.4s linear 0s infinite;
+    -ms-animation: bigchange1 2.4s linear 0s infinite;
+    animation: bigchange1 2.4s linear 0s infinite;
+}
+/*后轮*/
+.wheel_2 {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 6px solid #65a363;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 52px;
+    margin-left: -69px;
+    -webkit-animation: bigchange2 2.4s linear 0s infinite;
+    -ms-animation: bigchange2 2.4s linear 0s infinite;
+    animation: bigchange2 2.4s linear 0s infinite;
+}
+
+/*车轮的转动*/
+@-webkit-keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(720deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+@-ms-keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(720deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(720deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+/*轮毂的变化*/
+@-webkit-keyframes bigchangew {
+    50% {
+        width: 20px;
+        border-radius: 5px;
+        border: 2px solid #65a363;
+        margin-left: -12px;
+        margin-top: -2px;
+    }
+    75% {
+        width: 30px;
+        border-radius: 10px;
+        border: 4px solid #65a363;
+        margin-left: -19px;
+        margin-top: -4px;
+    }
+    90% {
+        width: 20px;
+        border-radius: 5px;
+        border: 2px solid #65a363;
+        margin-left: -12px;
+        margin-top: -2px;
+    }
+}
+
+@-ms-keyframes bigchangew {
+    50% {
+        width: 20px;
+        border-radius: 5px;
+        border: 2px solid #65a363;
+        margin-left: -12px;
+        margin-top: -2px;
+    }
+    75% {
+        width: 30px;
+        border-radius: 10px;
+        border: 4px solid #65a363;
+        margin-left: -19px;
+        margin-top: -4px;
+    }
+    90% {
+        width: 20px;
+        border-radius: 5px;
+        border: 2px solid #65a363;
+        margin-left: -12px;
+        margin-top: -2px;
+    }
+}
+
+@keyframes bigchangew {
+    50% {
+        width: 20px;
+        border-radius: 5px;
+        border: 2px solid #65a363;
+        margin-left: -12px;
+        margin-top: -2px;
+    }
+    75% {
+        width: 30px;
+        border-radius: 10px;
+        border: 4px solid #65a363;
+        margin-left: -19px;
+        margin-top: -4px;
+    }
+    90% {
+        width: 20px;
+        border-radius: 5px;
+        border: 2px solid #65a363;
+        margin-left: -12px;
+        margin-top: -2px;
+    }
+}
+
+/*轮毂的变化*/
+@-webkit-keyframes bigchangeh {
+    50% {
+        height: 20px;
+        border-radius: 5px;
+        border: 2px solid #65a363;
+        margin-left: -2px;
+        margin-top: -12px;
+    }
+    75% {
+        height: 30px;
+        border-radius: 10px;
+        border: 4px solid #65a363;
+        margin-left: -4px;
+        margin-top: -19px;
+    }
+    90% {
+        height: 20px;
+        border-radius: 5px;
+        border: 2px solid #65a363;
+        margin-left: -2px;
+        margin-top: -12px;
+    }
+}
+
+@-ms-keyframes bigchangeh {
+    50% {
+        height: 20px;
+        border-radius: 5px;
+        border: 2px solid #65a363;
+        margin-left: -2px;
+        margin-top: -12px;
+    }
+    75% {
+        height: 30px;
+        border-radius: 10px;
+        border: 4px solid #65a363;
+        margin-left: -4px;
+        margin-top: -19px;
+    }
+    90% {
+        height: 20px;
+        border-radius: 5px;
+        border: 2px solid #65a363;
+        margin-left: -2px;
+        margin-top: -12px;
+    }
+}
+
+@keyframes bigchangeh {
+    50% {
+        height: 20px;
+        border-radius: 5px;
+        border: 2px solid #65a363;
+        margin-left: -2px;
+        margin-top: -12px;
+    }
+    75% {
+        height: 30px;
+        border-radius: 10px;
+        border: 4px solid #65a363;
+        margin-left: -4px;
+        margin-top: -19px;
+    }
+    90% {
+        height: 20px;
+        border-radius: 5px;
+        border: 2px solid #65a363;
+        margin-left: -2px;
+        margin-top: -12px;
+    }
+}
+
+.hub1 {
+    width: 20px;
+    border-radius: 5px;
+    border: 2px solid #65a363;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -2px;
+    -webkit-animation: roll 2.4s linear 0s infinite, bigchangew 2.4s ease-in-out 0s infinite;
+    -ms-animation: roll 2.4s linear 0s infinite, bigchangew 2.4s ease-in-out 0s infinite;
+    animation: roll 2.4s linear 0s infinite, bigchangew 2.4s ease-in-out 0s infinite;
+}
+
+.hub2 {
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid #65a363;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -2px;
+    margin-top: -12px;
+    -webkit-animation: roll 2.4s linear 0s infinite, bigchangeh 2.4s ease-in-out 0s infinite;
+    -ms-animation: roll 2.4s linear 0s infinite, bigchangeh 2.4s ease-in-out 0s infinite;
+    animation: roll 2.4s linear 0s infinite, bigchangeh 2.4s ease-in-out 0s infinite;
+}
+
+@-webkit-keyframes mycolor{
+    0%{
+        background-color: #c2dbb7;
+    }
+    30%{
+        background-color: #4cbe73;
+    }
+    60%{
+        background-color: #328364;
+    }
+    100%{
+        background-color: #7410a9;
+    }
+}
+
+@-ms-keyframes mycolor{
+    0%{
+        background-color: #c2dbb7;
+    }
+    30%{
+        background-color: #4cbe73;
+    }
+    60%{
+        background-color: #328364;
+    }
+    100%{
+        background-color: #7410a9;
+    }
+}
+
+@keyframes mycolor{
+    0%{
+        background-color: #c2dbb7;
+    }
+    30%{
+        background-color: #4cbe73;
+    }
+    60%{
+        background-color: #328364;
+    }
+    100%{
+        background-color: #7410a9;
+    }
+}
+
+.tail {
+    border-left:3px solid black;
+    width:30px;
+    height:18px;
+    border-bottom-left-radius: 35px 84px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-3px;
+    margin-top: -32px;
+}
+.f1-1 {
+    width:18px;
+    height:16px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    background-color: #7410a9;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-18px;
+    margin-top: -24px;
+    -webkit-animation: mycolor 2.4s linear 0s infinite;
+    -ms-animation: mycolor 2.4s linear 0s infinite;
+    animation: mycolor 2.4s linear 0s infinite;
+}
+.f1-2 {
+    width:18px;
+    height:16px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    background-color: #7410a9;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top: -24px;
+    -webkit-animation: mycolor 2.4s linear 0s infinite;
+    -ms-animation: mycolor 2.4s linear 0s infinite;
+    animation: mycolor 2.4s linear 0s infinite;
+}
+.f2 {
+    width:46px;
+    height:20px;
+    border-radius: 10px;
+    background-color: #7410a9;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-23px;
+    margin-top: -11px;
+    -webkit-animation: mycolor 2.4s linear 0s infinite;
+    -ms-animation: mycolor 2.4s linear 0s infinite;
+    animation: mycolor 2.4s linear 0s infinite;
+}
+.f3 {
+    width:34px;
+    height:14px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    background-color: #7410a9;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-17px;
+    margin-top: 8px;
+    -webkit-animation: mycolor 2.4s linear 0s infinite;
+    -ms-animation: mycolor 2.4s linear 0s infinite;
+    animation: mycolor 2.4s linear 0s infinite;
+}
+.f4 {
+    width:18px;
+    height:18px;
+    border-radius: 50%;
+    background-color: #7410a9;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-9px;
+    margin-top: 12px;
+    -webkit-animation: mycolor 2.4s linear 0s infinite;
+    -ms-animation: mycolor 2.4s linear 0s infinite;
+    animation: mycolor 2.4s linear 0s infinite;
+}

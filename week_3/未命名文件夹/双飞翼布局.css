@@ -1,0 +1,63 @@
+body {
+    margin: 20px;
+    background-color: #eaeaea;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #a4e8d9;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.article {
+    background-color: #fb8fb1;
+    height: 400px;
+    overflow: hidden;
+}
+
+.footer {
+    background-color: #c2bdff;
+    height: 100px;
+    text-align: center;
+
+}
+
+.article .left {
+    background-color: #fff5b8;
+    float: left;
+    width: 150px;
+    height: 16px;
+    margin-left: -100%;
+    /*等高布局*/
+    margin-bottom: -999px;
+    padding-bottom: 999px;
+}
+
+.article .right {
+    background-color: #f4c7dd;
+    float: left;
+    width: 100px;
+    height: 16px;
+    margin-left: -100px;
+    margin-bottom: -999px;
+    padding-bottom: 999px;
+}
+
+.article .middle {
+    background-color: #be4849;
+    float: left;
+    width: 100%;
+    margin-bottom: -999px;
+    padding-bottom: 999px;
+}
+/*为正文加上innner这个div是与圣杯布局的重要区别*/
+.inner {
+    margin-left: 150px;
+    margin-right: 100px;
+}
