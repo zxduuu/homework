@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <title>change_color</title>
+    <link rel="stylesheet" href="cl_change.css">
+
+
+</head>
+<body>
+
+<!--logo标题-->
+<div class="header">
+    <img src="hao123.png" class="logo_hao" alt="hao123">
+</div>
+<!--end logo标题-->
+
+<hr/>
+
+<div class="search_bar">
+    <div class="left logo">
+        <img src="baidu_logo.png" class="logo2" alt="baidu">
+    </div>
+
+    <form action="https://www.baidu.com/s">
+        <div class="input_wrapper">
+            <a href="javascript:;" class="page">
+                网页
+                <i class="arrow"></i>
+                <span class=""></span>
+            </a>
+
+            <div class="inp_box">
+                <input type="text" class="inp">
+            </div>
+        </div>
+
+        <div class="btn_box">
+            <input type="submit" value="百度一下" class="btn_sch">
+        </div>
+    </form>
+    <!--热搜栏-->
+    <div class="hotsearch">
+        <ul class="search_line">
+            <li class="search_glass"><a href="http://www.hao123.com/top" class="glass"></a></li>
+            <li class="search_hint color_web" id="hint">热搜:</li>
+            <li class="search_key" id="search-word"><a href="http://www.hao123.com/top" class="key">天气</a></li>
+            <li class="search_key"><a href="http://www.hao123.com/top" class="key">天气</a></li>
+            <li class="search_key"><a href="http://www.hao123.com/top" class="key">天气</a></li>
+            <li class="search_key"><a href="http://www.hao123.com/top" class="key">天气</a></li>
+            <li class="search_key"><a href="http://www.hao123.com/top" class="key">天气</a></li>
+            <li class="search_key"><a href="http://www.hao123.com/top" class="key">天气</a></li>
+            <li class="search_key_last"><a href="http://www.hao123.com/top" class="more color_web">更多</a></li>
+        </ul>
+    </div>
+
+    <div id="color">
+        <input type="button" class="color_btn yellow" name="#FFDF98">
+        <input type="button" class="color_btn green" name="#88efda">
+        <input type="button" class="color_btn pink" name="#FDDADA">
+        <input type="button" class="color_btn blue" name="#B6DAEB">
+    </div>
+</div>
+<!-- end 热搜栏-->
+
+<!--背景变色的选项页卡-->
+<div id="banner" class="bar">
+    <ul>
+        <li class="ban_li"><a href="https://www.hao123.com/">首页</a></li>
+        <li class="ban_li"><a href="#">电视剧</a></li>
+        <li class="ban_li"><a href="#">最新电影</a></li>
+        <li class="ban_li"><a href="#">新闻头条</a></li>
+        <li class="ban_li"><a href="#">军事热点</a></li>
+        <li class="ban_li"><a href="#">八卦娱乐</a></li>
+        <li class="ban_li"><a href="#">热门游戏</a></li>
+        <li class="ban_li"><a href="#">小游戏</a></li>
+    </ul>
+</div>
+<!--end 背景变色的选项页卡-->
+
+
+<!--页面正文内容-->
+<div class="middle">
+
+    <!--左侧信息栏-->
+    <div class="nav">
+        <div class="news_pic"><img
+                src="https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2016-07-29/0825b82a0df51345a85a523fe82aaaa2.jpg"
+                alt="news"></div>
+        <div class="nav_list">
+            <ul>
+                <li class="nav_dot">
+                    <i class="istar itv"></i>
+                    <a href="http://v.hao123.com/dianying/">电视剧</a>
+                    <span>|</span>
+                    <a href="http://v.hao123.com/zongyi/">综艺</a>
+                </li>
+                <li class="nav_dot">
+                    <i class="istar igame"></i>
+                    <a href="http://v.hao123.com/dianying/">游戏</a>
+                    <span>|</span>
+                    <a href="http://v.hao123.com/zongyi/">小游戏</a>
+                </li>
+                <li class="nav_dot">
+                    <i class="istar imovie"></i>
+                    <a href="http://v.hao123.com/dianying/">电影</a>
+                    <span>|</span>
+                    <a href="http://v.hao123.com/zongyi/">直播</a>
+                </li>
+                <li class="nav_dot">
+                    <i class="istar icomic"></i>
+                    <a href="http://v.hao123.com/dianying/">动画</a>
+                    <span>|</span>
+                    <a href="http://v.hao123.com/zongyi/">漫画</a>
+                </li>
+                <li class="nav_dot">
+                    <i class="istar iheadline"></i>
+                    <a href="http://v.hao123.com/dianying/">头条</a>
+                    <span>|</span>
+                    <a href="http://v.hao123.com/zongyi/">军事</a>
+                </li>
+                <li class="nav_dot">
+                    <i class="istar itour"></i>
+                    <a href="http://v.hao123.com/dianying/">旅游</a>
+                    <span>|</span>
+                    <a href="http://v.hao123.com/zongyi/">音乐</a>
+                </li>
+                <li class="nav_dot">
+                    <i class="istar ilottery"></i>
+                    <a href="http://v.hao123.com/dianying/">彩票</a>
+                    <span>|</span>
+                    <a href="http://v.hao123.com/zongyi/">股票</a>
+                </li>
+                <li class="nav_dot">
+                    <i class="istar ihumor"></i>
+                    <a href="http://v.hao123.com/dianying/">搞笑</a>
+                    <span>|</span>
+                    <a href="http://v.hao123.com/zongyi/">小说</a>
+                </li>
+                <li class="nav_dot">
+                    <i class="istar ihumor"></i>
+                    <a href="http://v.hao123.com/dianying/">特价</a>
+                    <span>|</span>
+                    <a href="http://v.hao123.com/zongyi/">手机</a>
+                </li>
+                <li class="nav_dot">
+                    <i class="istar ihumor"></i>
+                    <a href="http://v.hao123.com/dianying/">教育</a>
+                    <span>|</span>
+                    <a href="http://v.hao123.com/zongyi/">理财</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--end 左侧信息栏-->
+
+    <!--正文内容格1-->
+    <div class="article1">
+        <div class="list">
+            <div id=" " class=" ">
+                <div>
+                    <ul>
+                        <li class="con_dot"><a href="https://www.hao123.com/" class="color_web" target=_blank>
+                            <img src="https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/baiduzhongban-4.gif"
+                                 class="gi">百度 &bull;贴吧</a>
+                        </li>
+                        <li class="con_dot"><a href="http://www.sina.com.cn/" class="main_con_dot  color_web"
+                                               target=_blank
+                                               style="background: url(https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png) no-repeat 2px -280px;">
+                            新浪</a> &bull; <a href="http://weibo.com/" class="sub_con_dot color_web">微博</a>
+                        </li>
+                        <li class="con_dot"><a href="http://www.sohu.com/" class="main_con_dot color_web" target=_blank
+                                               style="background: url(https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png) no-repeat 2px -320px;">
+                            搜狐</a> &bull; <a href="http://tv.sohu.com/" class="sub_con_dot">视频</a></li>
+                        <li class="con_dot"><a href="http://www.qq.com/" class="main_con_dot" target=_blank
+                                               style="background: url(https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png) no-repeat 2px -40px;">
+                            腾 &nbsp; &nbsp;讯</a></li>
+                        <li class="con_dot"><a href="http://www.163.com/" class="main_con_dot" target=_blank
+                                               style="background: url(https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png) no-repeat 2px -159px;">
+                            网 &nbsp; &nbsp;易</a></li>
+                        <li class="con_dot"><a href="http://www.163.com/" class="main_con_dot" target=_blank
+                                               style="background: url(https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png) no-repeat 2px -400px;">
+                            优 酷 网</a></li>
+                        <li class="con_dot"><a href="https://www.tmall.com/" class="color_web" target=_blank>
+                            <img src="https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/shouye/mingzhan/tianmao2015082101.gif"
+                                 class="gi">
+                            天 猫</a></li>
+                        <li class="con_dot"><a href="http://www.ifeng.com/" class="main_con_dot" target=_blank
+                                               style="background:url(https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png) no-repeat 2px -240px;">
+                            凤 凰 网</a></li>
+                        <li class="con_dot"><a href="https://www.taobao.com/" class="main_con_dot" target=_blank
+                                               style="background:url(https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png) no-repeat 2px -360px;">
+                            淘 宝 网</a></li>
+                        <li class="con_dot"><a href="https://game.hao123.com/" class="main_con_dot" target=_blank
+                                               style="background:url(https://gss3.bdstatic.com/5bVXsj_p_tVS5dKfpU_Y_D3/urlicon/game0331.png) no-repeat">免费游戏</a>
+                        </li>
+                        <li class="con_dot"><a href="http://www.4399.com/" class="main_con_dot" target=_blank
+                                               style="background:url(https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png) no-repeat 2px 0;">
+                            4399游戏</a></li>
+                        <li class="con_dot"><a href="http://www.hao123.com/sports" class="main_con_dot" target=_blank
+                                               style="background:url(https://gss2.bdstatic.com/5bVYsj_p_tVS5dKfpU_Y_D3/urlicon/51619.png) no-repeat;">
+                            体育</a> &bull; <a href="http://www.hao123.com/nba">NBA</a></li>
+                        <li class="con_dot"><a href="http://www.jd.com/" class="main_con_dot" target=_blank
+                                               style="background: url(https://gss2.bdstatic.com/5bVYsj_p_tVS5dKfpU_Y_D3/urlicon/21.1.png) no-repeat;">京东商城</a>
+                        </li>
+                        <li class="con_dot"><a href="https://ju.taobao.com/" class="main_con_dot" target=_blank
+                                               style="background:url(https://gss3.bdstatic.com/5bVXsj_p_tVS5dKfpU_Y_D3/urlicon/8.411.png) no-repeat;">聚
+                            划 算</a></li>
+                        <li class="con_dot"><a href="http://tejia.hao123.com/" class="main_con_dot" target="_blank"
+                                               style="background:url(https://gss3.bdstatic.com/5bVXsj_p_tVS5dKfpU_Y_D3/urlicon/6282.png) no-repeat;">今日特价</a>
+                        </li>
+                        <li class="con_dot"><a href="http://v.hao123.com/" class="main_con_dot" target="_blank"
+                                               style="background:url(https://gss2.bdstatic.com/5bVYsj_p_tVS5dKfpU_Y_D3/urlicon/1419388771.png) no-repeat;">hao123影视</a>
+                        </li>
+                        <li class="con_dot"><a href="http://www.autohome.com.cn/" class="main_con_dot" target="_blank"
+                                               style="background:url(https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png) 2px -520px no-repeat;">
+                            汽车之家</a></li>
+                        <li class="con_dot"><a href="http://caipiao.hao123.com/" class="main_con_dot" target="_blank"
+                                               style="background:url(https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png) 2px -558px no-repeat;">
+                            彩票开奖</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="sp_line">
+
+                    </div>
+                    <ul>
+                        <li class="con_dot"><a href="http://www.eastmoney.com/" class="color_web" target=_blank>东方财富</a>
+                            &bull;<a href="http://www.hao123.com/licai">理财</a>
+                        </li>
+                        <li class="con_dot"><a href="http://cd.58.com/" class="color_web" target=_blank>
+                            58 同 城</a>
+                        </li>
+                        <li class="con_dot"><a href="http://cd.fang.com/" class="color_web" target=_blank>
+                            搜 房 网</a>
+                        </li>
+                        <li class="con_dot"><a href="http://www.ctrip.com/" class="color_web" target=_blank>
+                            携程旅行网</a>
+                        </li>
+                        <li class="con_dot"><a href="http://cd.fang.com/" class="color_web" target=_blank>
+                            百度地图</a>
+                        </li>
+
+                        <li class="con_dot"><a href="http://www.12306.cn/mormhweb/" target=_blank>12306</a>
+                            &bull;<a href="http://go.hao123.com/">旅游</a>
+                        </li>
+
+
+                        <li class="con_dot"><a href="http://www.jiayuan.com/" target=_blank>
+                            世纪佳缘</a>
+                        </li>
+
+                        <li class="con_dot"><a href="http://www.ganji.com/" target=_blank>
+                            赶 集 网</a>
+                        </li>
+                        <li class="con_dot"><a href="http://chengdu.bitauto.com/" target=_blank>
+                            易 车 网</a>
+                        </li>
+                        <li class="con_dot"><a href="http://www.qunar.com/" target=_blank>
+                            去哪儿网</a>
+                        </li>
+                        <li class="con_dot"><a href="http://www.icbc.com.cn/icbc/" target=_blank>
+                            工商银行</a>
+                        </li>
+                        <li class="con_dot"><a href="http://www.tianya.cn/" target=_blank>
+                            天涯社区</a>
+                        </li>
+
+
+                        <li class="con_dot"><a href="http://www.vip.com/" class="color_web" target=_blank>
+                            唯 品 会</a>
+                        </li>
+                        <li class="con_dot"><a href="https://www.alitrip.com/" target=_blank>
+                            阿里旅行</a>
+                        </li>
+                        <li class="con_dot"><a href="http://www.tuniu.com/" target=_blank>
+                            途牛旅行网</a>
+                        </li>
+                        <li class="con_dot"><a href="https://wx.qq.com/" target=_blank>
+                            微信网页版</a>
+                        </li>
+                        <li class="con_dot"><a href="http://tuijian.hao123.com/" class="color_web" target=_blank>
+                            头条新闻网</a>
+                        </li>
+                        <li class="con_dot"><a href="http://www.douyu.com/" target=_blank>
+                            斗 鱼 TV</a>
+                        </li>
+
+
+                        <li class="con_dot"><a href="http://life.hao123.com/" target=_blank>
+                            hao 到 家</a>
+                        </li>
+                        <li class="con_dot"><a href="http://www.zhibo8.cc/" target=_blank>
+                            直 播 吧</a>
+                        </li>
+                        <li class="con_dot"><a href="http://www.pcauto.com.cn/" class="color_web" target=_blank>
+                            太平洋汽车</a>
+                        </li>
+                        <li class="con_dot"><a href="http://www.hao123.com/xuexi" target=_blank>
+                            在线学习</a>
+                        </li>
+                        <li class="con_dot"><a href="http://moe.hao123.com/" target=_blank>萌主页</a>
+                            &bull;<a href="http://v.hao123.com/dongman/">动漫</a>
+                        </li>
+                        <li class="con_dot"><a href="http://www.bilibili.com/" target=_blank>
+                            哔哩哔哩</a>
+                        </li>
+
+
+                        <li class="con_dot"><a href="http://www.suning.com/" class="color_web" target=_blank>
+                            苏宁易购</a>
+                        </li>
+                        <li class="con_dot"><a href="http://www.gome.com.cn/" class="color_web" target=_blank>
+                            国美在线</a>
+                        </li>
+                        <li class="con_dot"><a href="http://gouwu.hao123.com/" class="color_web" target=_blank>
+                            购物大全</a>
+                        </li>
+                        <li class="con_dot"><a href="https://www.amazon.cn/" target=_blank>
+                            亚 马 逊</a>
+                        </li>
+                        <li class="con_dot"><a href="http://ai.taobao.com/" class="color_web" target=_blank>
+                            爱 淘 宝</a>
+                        </li>
+                        <li class="con_dot"><a href="http://haitao.hao123.com/" class="color_web" target=_blank>海淘</a>
+                            &bull;<a href="http://shouji.hao123.com/">手机</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end 正文内容格1-->
+
+
+    <!--正文内容格2-->
+    <div class="article2">
+        <div class="list">
+
+            <li class="con_dot"><a href="http://www.vip.com/" class="color_web" target=_blank>
+                游戏</a>
+            </li>
+            <li class="con_dot"><a href="https://www.alitrip.com/" target=_blank>
+                1刀9999</a>
+            </li>
+            <li class="con_dot"><a href="http://www.tuniu.com/" target=_blank>
+                游戏a</a>
+            </li>
+            <li class="con_dot"><a href="https://wx.qq.com/" target=_blank>
+                游戏b</a>
+            </li>
+            <li class="con_dot"><a href="http://tuijian.hao123.com/" target=_blank>
+                游戏c</a>
+            </li>
+            <li class="con_dot"><a href="http://www.douyu.com/" target=_blank>
+                游戏d</a>
+            </li>
+
+
+            <li class="con_dot"><a href="http://life.hao123.com/" target=_blank>
+                热门</a>
+            </li>
+            <li class="con_dot"><a href="http://www.zhibo8.cc/" target=_blank>
+                直 播 吧</a>
+            </li>
+            <li class="con_dot"><a href="http://www.pcauto.com.cn/" class="color_web" target=_blank>
+                太平洋汽车</a>
+            </li>
+            <li class="con_dot"><a href="http://www.hao123.com/xuexi" target=_blank>
+                在线学习</a>
+            </li>
+            <li class="con_dot"><a href="http://moe.hao123.com/" target=_blank>萌主页</a>
+                &bull;<a href="http://v.hao123.com/dongman/">动漫</a>
+            </li>
+            <li class="con_dot"><a href="http://www.bilibili.com/" target=_blank>
+                哔哩哔哩</a>
+            </li>
+
+
+            <li class="con_dot"><a href="http://www.suning.com/" class="color_web" target=_blank>
+                购物</a>
+            </li>
+            <li class="con_dot"><a href="http://www.gome.com.cn/" class="color_web" target=_blank>
+                国美在线</a>
+            </li>
+            <li class="con_dot"><a href="http://gouwu.hao123.com/" class="color_web" target=_blank>
+                购物大全</a>
+            </li>
+            <li class="con_dot"><a href="https://www.amazon.cn/" target=_blank>
+                亚 马 逊</a>
+            </li>
+            <li class="con_dot"><a href="http://ai.taobao.com/" class="color_web" target=_blank>
+                爱 淘 宝</a>
+            </li>
+            <li class="con_dot"><a href="http://haitao.hao123.com/" class="color_web" target=_blank>海淘</a>
+                &bull;<a href="http://shouji.hao123.com/">手机</a>
+        </div>
+    </div>
+    <!--end 正文内容格2-->
+
+</div>
+
+<script>
+    window.onload = initAll;
+    function initAll() {
+        var localStorage = window.localStorage;
+//        localStorage.getItem('bc');
+//        document.getElementsByClassName('key').style.color = localStorage.getItem('bc');
+
+        document.getElementById('banner').style.background = localStorage.getItem('bc');              // 获取颜色代码
+        x = document.getElementsByClassName('color_web');
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.color = localStorage.getItem('bc');
+        }
+
+
+        var buttons = document.getElementsByClassName('color_btn');
+        console.log(buttons);
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', function (e) {
+                c = e.target;
+                document.getElementById('banner').style.background = c.name;              // 获取颜色代码
+                document.getElementById('hint').style.color = c.name;              // 获取颜色代码
+                x = document.getElementsByClassName('color_web');              // 获取颜色代码
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.color = c.name;
+                }
+                console.log(c.name);
+                localStorage.setItem('bc', c.name);
+            });
+        }
+    }
+
+</script>
+
+</body>
+</html>

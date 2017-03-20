@@ -1,0 +1,90 @@
+body {
+    color:white;
+    font-weight: bold;
+    font-size: 19px;
+    background-color: #EECFA1;
+}
+
+/*计算器*/
+.wrapper {
+    width:500px;
+    height:480px;
+    /*background: url(bg-2.jpg);*/
+    width: 500px;
+    margin-top: 20px;
+    background:#000;
+    padding:20px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.3);
+}
+
+
+/*显示器*/
+#screen{
+    width: 450px;
+    height: 80px;
+    margin: 30px auto;
+    background: #7972ab;
+    border-radius: 10px;
+    text-align:right;
+
+}
+
+/*两行显示区*/
+.print{
+    display: block;
+    line-height:40px;
+    width: 420px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background: #7972ab;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/*一行按钮*/
+ul{
+    display:block;
+    width: 450px;
+    height: 60px;
+    margin: 5px auto;
+    padding: 0;
+}
+
+/*按钮单列*/
+li{
+    display: inline-block;
+}
+
+/*普通按钮样式*/
+.btn{
+    display:inline-block;
+    margin-right: 1px;
+    outline:none;
+    float: left;
+    width: 85px;
+    height: 60px;
+    background: #a5aee8;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+}
+
+/*数字按钮*/
+.bt_number{
+    color: #000000;
+}
+
+/*占两格的按钮*/
+.bt_double{
+    width: 175px;
+}
+
+/*清除按钮*/
+.bt_clear{
+    color: #f00;
+}
