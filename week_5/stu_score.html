@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>student_level</title>
+    <script type="text/javascript">
+        var student;
+//        该函数中输入学生分数,查看学生分数等级
+        function stu_score(student) {
+            if (student <= 100 && student > 90) {
+                console.log('level1');
+            } else if (student <= 90 && student > 80) {
+                console.log('level2');
+            } else if (student <= 80 && student > 70) {
+                console.log('level3');
+            } else if (student <= 70 && student > 60) {
+                console.log('level4');
+            } else if (student <= 60 && student > 50) {
+                console.log('level4');
+            } else if (student <= 50 && student > 40) {
+                console.log('level4');
+            } else if (student <= 40 && student > 30) {
+                console.log('level4');
+            } else if (student <= 30 && student > 20) {
+                console.log('level4');
+            } else {
+                console.warn('fail');
+            }
+        }
+
+    </script>
+</head>
+<body>
+<div>
+    请输入学生分数,查看学生等级(函数入口为stu_score):
+</div>
+</body>
+</html>

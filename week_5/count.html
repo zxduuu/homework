@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>counting</title>
+</head>
+
+<body>
+从数组["a","x","b","d","m","a","k","m","p","j","a"]中</br>找到出现次数最多的字母,并记下次数和出现的位置:
+<script>
+    var arr=["a","x","b","d","m","a","k","m","p","j","a"];
+
+    var h = {};
+    for(var i = 0; i < arr.length; i++) {
+        var k = arr[i];
+        if (h[k] == undefined) {
+            h[k] = {
+                count: 0,
+                index: []
+            };
+        }
+        h[k].count++;
+        h[k].index.push(i);
+    }
+
+    var x = 0;
+    var y;
+    for (var k in h) {
+        if (h[k].count > x) {
+            x = h[k].count;
+            y = h[k];
+            key = k;
+        }
+    }
+
+    console.log('出现次数最多的字母为:' + key);
+    console.log('出现次数为:' + x);
+    console.log('出现位置为:' + y.index);
+
+    alert('出现次数最多的字母为:' + key)
+    alert('出现次数为:' + x)
+    alert('出现位置为:' + y.index)
+</script>
+</body>
+</html>
