@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>课程表</title>
+    <style type="text/css">
+        table,td,th{
+            border:1px solid black;
+        }
+        table{
+            table-layout:fixed;
+            width:60%;
+            background-color:#B9B3FF;
+            margin:80px auto ;
+        }
+        th{
+            width:100px;
+        }
+        td{
+            width:100px;
+            text-align: center
+        }
+        caption{
+            font-size:24px;
+        }
+    </style>
+</head>
+
+<body>
+    <table> 
+        <!-- 表格名字 -->
+        <caption>
+            <b>2016课程表</b>
+        </caption>
+        <!-- 表头 -->
+        <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednsday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        <!-- 第一行 -->
+        <tr>
+            <td colspan="5">上午</td>
+            <td rowspan="9">无课</td>
+            <td rowspan="9">无课</td>
+        </tr>
+        <!-- 第二行 -->
+        <tr>
+            <td>语文</td>
+            <td>数学</td>
+            <td>英语</td>
+            <td>化学</td>
+            <td>物理</td>
+        </tr>
+        <!-- 第三行 -->
+        <tr>
+            <td>生物</td>
+            <td>地理</td>
+            <td>政治</td>
+            <td>数学</td>
+            <td>语文</td>
+        </tr>
+        <!-- 第四行 -->
+        <tr>
+            <td>数学</td>
+            <td>英语</td>
+            <td>化学</td>
+            <td>语文</td>
+            <td>生物</td>
+        </tr>
+        <!-- 第五行 -->
+        <tr>
+            <td>体育</td>
+            <td>历史</td>
+            <td>物理</td>
+            <td>地理</td>
+            <td>数学</td>
+        </tr>
+        <!-- 第六行 -->
+        <tr>
+            <td colspan="5">下午</td>
+        </tr>
+        <!-- 第七行 -->
+        <tr>
+            <td>物理</td>
+            <td>语文</td>
+            <td>数学</td>
+            <td>英语</td>
+            <td>政治</td>
+        </tr>
+        <!-- 第八行 -->
+        <tr>
+            <td>英语</td>
+            <td>化学</td>
+            <td>体育</td>
+            <td>生物</td>
+            <td>历史</td>
+        </tr>
+        <!-- 第九行 -->
+        <tr>
+            <td>地理</td>
+            <td>政治</td>
+            <td>历史</td>
+            <td>美术</td>
+            <td>体育</td>
+        </tr>
+    </table>
+</body>
+</html>
