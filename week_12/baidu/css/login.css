@@ -1,0 +1,306 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    height: 100%;
+    color: #666;
+    font-size: 12px;
+    font-family: Tahoma, Helvetica, "Microsoft Yahei", "微软雅黑", Arial, STHeiti;
+}
+
+a {
+    text-decoration: none;
+    color: #2e82ff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.login_wrapper {
+    background: #fff;
+    height: auto;
+    position: relative;
+    min-height: 100%;
+    _height: 100%;
+    width: 920px;
+    margin: 0 auto;
+}
+
+#head, #content, #foot {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content {
+    margin-top: 50px;
+    width: 920px;
+    background: url('https://passport.baidu.com/static/passpc-account/img/login/ad.png') no-repeat 0 center;
+    padding-bottom: 40px;
+    display: block;
+}
+
+#head {
+    padding-top: 40px;
+}
+
+.vp-header {
+    display: inline;
+    font-size: 66px;
+}
+
+.vp-header a {
+    display: block;
+    width: 186px;
+    height: 75px;
+    background-image: url('https://passport.baidu.com/static/passpc-account/img/login/logo_pass.png');
+    /*background-image: -webkit-image-set(url('https://passport.baidu.com/static/passpc-account/img/login/logo_pass_2x.png') 1x,url('https://passport.baidu.com/static/passpc-account/img/login/logo_pass_2x.png') 2x);*/
+    /*background-image: -moz-image-set(url('https://passport.baidu.com/static/passpc-account/img/login/logo_pass_2x.png') 1x,url('https://passport.baidu.com/static/passpc-account/img/login/logo_pass_2x.png') 2x);*/
+    /*background-image: -o-image-set(url('https://passport.baidu.com/static/passpc-account/img/login/logo_pass_2x.png') 1x,url('https://passport.baidu.com/static/passpc-account/img/login/logo_pass_2x.png') 2x);*/
+    /*background-image: -ms-image-set(url('https://passport.baidu.com/static/passpc-account/img/login/logo_pass_2x.png') 1x,url(/static/passpc-account/img/login/logo_pass_2x.png) 2x);*/
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.content {
+    margin-top: 50px;
+    width: 920px;
+    background: url('https://passport.baidu.com/static/passpc-account/img/login/ad.png') no-repeat 0 center;
+    padding-bottom: 40px;
+}
+
+.login_container {
+    zoom: 1;
+    overflow: hidden;
+}
+
+.login_form {
+    float: right;
+    width: 320px;
+}
+
+.login_form h3 {
+    font-size: 16px;
+    position: relative;
+    z-index: 200;
+    color: #333;
+}
+
+.login_title {
+
+}
+
+.login_input {
+
+}
+
+.login_form_input {
+
+}
+
+.pass-form {
+    padding-bottom: 10px;
+}
+
+.pass-login {
+    position: relative;
+}
+
+.sms-Switch {
+    text-align: right;
+    margin: 0 0 10px;
+}
+
+.sms-btn {
+    background: url('https://passport.baidu.com/static/passpc-account/img/login/smsSwitchPhone.png') no-repeat;
+    background-position: 0 0;
+    padding-left: 15px;
+    color: #666;
+    cursor: pointer;
+}
+
+.pass_item {
+    position: relative;
+    clear: both;
+    z-index: 18;
+    margin-bottom: 20px;
+}
+
+.pass-username-text, .pass-username-code {
+    position: relative;
+    z-index: 17;
+    display: block;
+    padding: 12px 10px 12px 38px;
+    margin: 0;
+    height: 14px;
+    width: 270px;
+    line-height: 14px;
+    border: 1px solid #dedede;
+    font-size: 14px;
+    color: #666;
+    transition: .2s;
+}
+
+.pass_label {
+    font-size: 12px;
+    color: #666;
+    background-image: url('https://passport.baidu.com/static/passpc-account/img/login/icon.png');
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 0;
+    height: 20px;
+    overflow: hidden;
+    padding: 0 0 0 18px;
+    z-index: 20;
+}
+
+.pass_label_name {
+    background-position: 0 -52px;
+}
+
+.pass_label_code {
+    background-position: -21px -52px;
+}
+
+input {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0 0 0 0;
+    font: 11px BlinkMacSystemFont;
+}
+
+.auto_login {
+    color: #666;
+    margin-left: 5px;
+}
+
+.login_btn {
+    position: relative;
+    margin-bottom: 0;
+}
+
+#submit_btn {
+    width: 100%;
+    height: 40px;
+    background: #2e82ff;
+    font-size: 14px;
+    font-weight: 700;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.pass-reglink {
+    position: absolute;
+    right: 0;
+    top: -35px;
+    border-left: 1px solid #2e82ff;
+    padding-left: 8px;
+    font-size: 12px;
+    line-height: 12px;
+    height: 12px;
+}
+
+.pass-fgtpwd {
+    position: absolute;
+    right: 66px;
+    top: -35px;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    height: 12px;
+    line-height: 12px;
+}
+
+.pass_option_title {
+    padding-top: 40px;
+    margin-bottom: 15px;
+}
+
+.pass_option_list {
+    float: left;
+}
+
+.pass_option_btn {
+    float: left;
+}
+
+.list_btn {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.list_btn li {
+    float: left;
+    list-style: none;
+}
+
+.list_btn li a {
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+    width: 24px;
+    text-indent: -9999px;
+    height: 24px;
+    overflow: hidden;
+    transition: all ease-out .3s;
+    background-image: -webkit-image-set(url('https://passport.baidu.com/static/passpc-account/img/login/icon.png') 1x,
+                                        url('https://passport.baidu.com/static/passpc-account/img/login/icon_2x.png') 2x);
+}
+
+.pass_option{
+    overflow: hidden;
+}
+
+.pass_option_qq .pass_option_a {
+    background-position: 0 0;
+}
+
+.pass_option_sina .pass_option_a {
+    background-position: -25px 0;
+}
+
+.pass_option_wechat .pass_option_a {
+    background-position: -175px 0;
+}
+
+.pass-option-qrcode {
+    background-image: -webkit-image-set(url('https://passport.baidu.com/static/passpc-account/img/login/icon.png') 1x,
+    url('https://passport.baidu.com/static/passpc-account/img/login/icon_2x.png') 2x);
+    background-position: -150px 0;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+    width: 24px;
+    text-indent: -9999px;
+    height: 24px;
+    overflow: hidden;
+    transition: all ease-out .3s;
+}
+
+#foot {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0;
+    height: 40px;
+    width: 120px;
+    margin-left: -60px;
+    line-height: 40px;
+    text-align: center;
+    color: #7a77c8;
+}

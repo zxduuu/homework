@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin-top: 10px;
+}
+
+p {
+    /*margin-top:10px;*/
+    line-height: 24px;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.head {
+    text-align: center;
+}
+
+p .indent {
+    text-indent: 40px
+}
+
+li {
+    margin-top: 10px;
+}

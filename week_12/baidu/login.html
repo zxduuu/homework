@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+
+<div class="login_wrapper">
+    <div id="head">
+            <div class="vp-header">
+                <a href="http://www.baidu.com/">
+                    <!--<img src="" alt="loo">-->
+                </a>
+            </div>
+    </div>
+
+    <div id="content">
+        <div class="login_container">
+            <div class="login_form">
+                <h3 id="login_title">登录百度账号</h3>
+                <div class="login_input">
+                    <!--登录区-->
+                    <div class="login_form_input">
+                        <form id="login" class="pass-form" method="POST">
+                        <p class="pass-login">
+                            <p class="sms-Switch">
+                                <a class="sms-btn" title="短信快捷登录">短信快捷登录</a>
+                            </p>
+                        </p>
+                            <!--输入区-->
+                        <p class="pass_item user_name">
+                            <label for="username" class="pass_label pass_label_name"></label>
+                            <input id="username" type="text" name="" placeholder="手机/邮箱/用户名" required="required" class="pass-username-text">
+                        </p>
+
+                        <p class="pass_item user_password">
+                            <label for="usercode" class="pass_label pass_label_code">手名</label>
+                            <input id="usercode" type="text" name="" placeholder="密码" required="required" class="pass-username-code">
+                        </p>
+
+                        <p class="pass_item user_option">
+                            <input type="checkbox" class="pass_checkbox" checked="checked">
+                            <label for="" class="auto_login">下次自动登录</label>
+                        </p>
+
+                        <p class="pass_item pass_item login_btn">
+                            <input id="submit_btn" type="submit" value="登录">
+                            <a class="pass-reglink" href="https://passport.baidu.com/v2/?reg&tt=1476977510577&gid=4F4295C-576E-46D9-99C2-00149E4626F5&tpl=mn&u=https%3A%2F%2Fwww.baidu.com%2F" target="_blank">立即注册</a>
+                            <a class="pass-fgtpwd" href="https://passport.baidu.com/?getpassindex&tt=1476977510577&gid=4F4295C-576E-46D9-99C2-00149E4626F5&tpl=mn&u=https%3A%2F%2Fwww.baidu.com%2F" target="_blank">登录遇到问题</a>
+                        </p>
+                        </form>
+                        <!--登录选项区-->
+                        <div class="pass_option">
+                            <div class="pass_option_title">
+                                可以使用以下方式登录
+                                <span class="pass_option_note"></span>
+                            </div>
+                            <div class="pass_option_list">
+                                <!--<a href=""></a>-->
+                                <div class="pass_option_btn">
+                                    <ul class="list_btn">
+                                        <li class="pass_option_qq"><a class="pass_option_a" href="#" title="QQ账号">QQ账号</a></li>
+                                        <li class="pass_option_sina"><a class="pass_option_a" href="#" title="新浪微博">新浪微博</a></li>
+                                        <li class="pass_option_wechat"><a class="pass_option_a" href="#" title="微信">微信</a></li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="pass-option-qrcode" title="二维码登录" >二维码登录</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="foot">
+        <!--<div class="">-->
+        <div class="foot_txt">
+            2016&nbsp;©Baidu
+        </div>
+        <!--</div>-->
+
+    </div>
+
+</div>
+<!--<script src="js/login.js"></script>-->
+
+</body>
+</html>
